@@ -1,6 +1,4 @@
-const { createApp } = Vue;
-
-createApp({
+const App = {
   data() {
     return {
       kmh: 0,
@@ -27,4 +25,6 @@ createApp({
   mounted() {
     this.onKmhInput();
   }
-}).mount('#app');
+}
+
+Vue.createApp(App).mount('#app');
